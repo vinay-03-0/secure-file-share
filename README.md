@@ -1,85 +1,28 @@
-# Secure File Sharing Portal
+# Secure File Sharing Portal with Expiry & OTP
 
-This is a **Secure File Sharing Web Application** developed using **Java Spring Boot (backend)** and **React.js (frontend)**. It allows users to upload and share files securely with features like **OTP verification** and **file expiry time**.
+This project is a full-stack web application that allows users to securely share files with optional OTP verification and expiration time.
 
----
+## 🚀 Features
+- Upload and share files securely.
+- Set file expiry time.
+- OTP verification for file access.
+- Frontend: React.js
+- Backend: Java Spring Boot
+- In-memory H2 database for testing.
 
-## 🔐 Key Features
+## 🛠 Tech Stack
+- **Backend**: Java 21, Spring Boot, Spring Security, H2
+- **Frontend**: React.js, Axios, HTML/CSS
+- **Build Tool**: Maven
 
-- **File Upload & Download**: Upload files and share download links.
-- **OTP Verification**: Access to shared files is secured using One-Time Passwords (OTP).
-- **Expiry Timer**: Set an expiry time after which the file will be deleted automatically.
-- **Spring Security**: Ensures backend access control.
-- **H2 Database**: In-memory database used for testing and development.
+## 📂 Folder Structure
+- `frontend/` – React source code
+- `backend/` – Spring Boot source with `pom.xml`
+- `README.md` – Project overview
 
----
-
-## 🛠️ Tech Stack
-
-### Backend
-- Java 21
-- Spring Boot 4.0
-- Spring MVC, Spring Security
-- H2 Database
-- Maven
-
-### Frontend
-- React.js
-- Axios for API calls
-- Bootstrap or Tailwind CSS (optional for UI styling)
-
----
-
-## 📂 Project Structure
-
-secure-file-share/
-│
-├── backend/
-│ ├── src/main/java/com/secureshare/
-│ │ ├── controller/
-│ │ ├── service/
-│ │ ├── model/
-│ │ └── SecurefileshareApplication.java
-│ └── pom.xml
-│
-├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── App.js
-│ │ └── index.js
-│ └── package.json
-
-yaml
-Copy
-Edit
-
----
-
-## 🚀 How to Run
-
-### Backend (Spring Boot)
-```bash
-cd backend
-mvn clean install
-mvn spring-boot:run
-Frontend (React)
-bash
-Copy
-Edit
-cd frontend
-npm install
-npm start
-📌 Usage
-Upload a file from the web UI.
-
-Share the link with the recipient.
-
-Recipient must enter the OTP sent to email/mobile (simulated for now).
-
-File is only available for download until the expiry time.
-
-🤝 Author
-Vinay Y M
-BCA Graduate | Java Developer | GitHub Profile
-
+## 📦 How to Run
+1. Run the Spring Boot app (`SecurefileshareApplication.java`)
+2. Run the React app from the frontend folder using:
+   ```bash
+   npm install
+   npm start
